@@ -1728,6 +1728,57 @@ export interface Config {
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-headless -->
 
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-hindsight-memory -->
+<a id="deepseek-aidsh-hindsight-memory"></a>
+
+## `@deepseek-ai/dsh-hindsight-memory`
+
+- `inject`: `tools` · `sessionProjections`
+- `source`: [`packages/experimental/hindsight-memory/src/types.ts:14`](../packages/experimental/hindsight-memory/src/types.ts)
+
+```ts config-catalog
+/** Normalized plugin configuration (18 keys; see cordis.patch.yml for defaults). */
+export interface HindsightMemoryConfig {
+  /** Self-hosted Hindsight base URL without a trailing slash. */
+  url: string
+  /** Memory bank id. */
+  bank: string
+  /** Char budget of the USER store (Hermes user_char_limit). */
+  userCharLimit: number
+  /** Char budget of the MEMORY store (Hermes memory_char_limit). */
+  memoryCharLimit: number
+  /** Inject the frozen snapshot at the first step of each session. */
+  snapshot: boolean
+  /** Run a semantic recall after the first turn. */
+  autoRecall: boolean
+  /** Token budget for semantic recall. */
+  recallTokens: number
+  /** Retain each finished turn as a mem:session document. */
+  autoRetain: boolean
+  /** Skip retention when the combined turn text is shorter than this many chars. */
+  retainMinChars: number
+  /** Max chars retained per turn. */
+  maxRetainChars: number
+  /** Nudge the model to review memory every N turns; 0 disables. */
+  nudgeInterval: number
+  /** Base tags attached to every write. */
+  tags: string[]
+  /** Timeout for recall / document reads. */
+  timeoutMs: number
+  /** Timeout for retain / delete (server-side extraction takes seconds). */
+  retainTimeoutMs: number
+  /** Max chars of a single curated entry. */
+  maxEntryChars: number
+  /** Total char cap for injected context text. */
+  maxInjectedChars: number
+  /** Screen writes for credentials and prompt-injection text. */
+  protectSecrets: boolean
+  /** Max entries read for the session snapshot. */
+  maxEntries: number
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-hindsight-memory -->
+
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-hmr -->
 <a id="deepseek-aidsh-hmr"></a>
 
@@ -3121,6 +3172,25 @@ export interface Config {
 }
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-schedule -->
+
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-sdd-workbench -->
+<a id="deepseek-aidsh-sdd-workbench"></a>
+
+## `@deepseek-ai/dsh-sdd-workbench`
+
+- `inject`: `fs` · `sandboxPolicy` · `sessions`
+- `source`: [`packages/experimental/sdd-workbench/src/index.ts:40`](../packages/experimental/sdd-workbench/src/index.ts)
+
+```ts config-catalog
+/** Tunable read caps, validated by `SddWorkbench.Config`. */
+export interface SddWorkbenchConfig {
+  /** Full-file byte cap for one document read (PRD NFR-02). */
+  maxDocBytes: number
+  /** Bytes of ROADMAP.md / BRIEF.md decoded to locate header fields. */
+  briefProbeBytes: number
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-sdd-workbench -->
 
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-sdk-app -->
 <a id="deepseek-aidsh-sdk-app"></a>
@@ -5120,6 +5190,7 @@ These load from a `cordis.yml` entry with no `config:` block; they declare no co
 | `@deepseek-ai/dsh-client-ui-reference` | — | [`packages/client/ui-reference/src/index.ts`](../packages/client/ui-reference/src/index.ts) |
 | `@deepseek-ai/dsh-client-ui-renderer` | — | [`packages/client/ui-renderer/src/index.ts`](../packages/client/ui-renderer/src/index.ts) |
 | `@deepseek-ai/dsh-client-ui-schedule` | — | [`packages/client/ui-schedule/src/index.ts`](../packages/client/ui-schedule/src/index.ts) |
+| `@deepseek-ai/dsh-client-ui-sdd-workbench` | — | [`packages/experimental/client-ui-sdd-workbench/src/index.ts`](../packages/experimental/client-ui-sdd-workbench/src/index.ts) |
 | `@deepseek-ai/dsh-client-ui-secret-mask` | — | [`packages/client/ui-secret-mask/src/index.ts`](../packages/client/ui-secret-mask/src/index.ts) |
 | `@deepseek-ai/dsh-client-ui-session` | — | [`packages/client/ui-session/src/index.ts`](../packages/client/ui-session/src/index.ts) |
 | `@deepseek-ai/dsh-client-ui-settings` | — | [`packages/client/ui-settings/src/index.ts`](../packages/client/ui-settings/src/index.ts) |

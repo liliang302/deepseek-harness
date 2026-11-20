@@ -1,0 +1,28 @@
+# hindsight-memory 的 bundle patch。
+# 安装后由 Loader 应用：向当前 profile 插入一个 Host 插件行。
+# 配置项说明见 README.md「配置」一节。
+- insert:
+    - id: hindsight-memory
+      name: "hindsight-memory"
+      config:
+        url: http://127.0.0.1:8888
+        bank: hermes
+        # Hermes 的 MEMORY.md / USER.md 字符预算
+        userCharLimit: 1375
+        memoryCharLimit: 2200
+        # 会话首个 pre-step 注入冻结快照
+        snapshot: true
+        # 之后每轮做语义召回
+        autoRecall: true
+        recallTokens: 800
+        # 每轮结束沉淀为 mem:session
+        autoRetain: true
+        retainMinChars: 120
+        # 每 N 轮提醒审查记忆
+        nudgeInterval: 10
+        tags:
+          - dsh
+        timeoutMs: 8000
+        retainTimeoutMs: 30000
+        # 每个库最多读取的条目数
+        maxEntries: 200

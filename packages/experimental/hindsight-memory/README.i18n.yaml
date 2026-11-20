@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/hindsight-memory/README.md
+/:
+  en: 7de09821c4abfb52
+  zh: 3822d77cd9a36cfc
+/deepseek-ai-dsh-hindsight-memory:
+  en: 02d724146212883c
+  zh: 101812e9dd607ed4
+/deepseek-ai-dsh-hindsight-memory/assignment-entry-my-ai-infra-sdd-dsh:
+  en: bafc435a7a204f31
+  zh: c3f7e0b3273be352
+/deepseek-ai-dsh-hindsight-memory/run-from-source:
+  en: e122ec28963bd340
+  zh: 8b6e958390459114
+/deepseek-ai-dsh-hindsight-memory/configuration-cordis-patch-yml-validated-at-load:
+  en: 6b634ae7aee5cbd7
+  zh: e93b1f8a9dbf5dab
+/deepseek-ai-dsh-hindsight-memory/known-limitations-and-deferred-work:
+  en: d7bdcbf65c96b8c5
+  zh: 188bfa58eeef5072

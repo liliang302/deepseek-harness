@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Memoria Hindsight",
+    "description": "Memoria de largo plazo global sobre un servicio Hindsight autoalojado: dos almacenes curados (USER/MEMORY) al estilo Hermes con presupuestos de caracteres, instantánea congelada por sesión, recuperación semántica por turno, herramienta memory con filtrado de seguridad y retención automática por turno. Requiere acceso de red a la URL de Hindsight configurada.",
+    "detail": "docs/DETAIL.md"
+  }
+}

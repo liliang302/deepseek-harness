@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Hindsight memory",
+    "description": "Global long-term memory on a self-hosted Hindsight service: a Hermes-style USER/MEMORY pair of curated stores with char budgets, a frozen per-session snapshot, per-turn semantic recall, an explicit memory tool with safety screening, and automatic per-turn retention. Requires network access to the configured Hindsight URL.",
+    "detail": "docs/DETAIL.md"
+  }
+}

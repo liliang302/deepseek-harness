@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Hindsight メモリ",
+    "description": "自己ホストの Hindsight サービスに基づくグローバル長期記憶：Hermes 風の USER/MEMORY 二層ストア、セッション単位のフリーズスナップショット、ターン毎のセマンティック検索、安全チェック付き memory ツール、自動ターン蓄積。設定済み Hindsight へのネットワークアクセスが必要です。",
+    "detail": "docs/DETAIL.md"
+  }
+}

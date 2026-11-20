@@ -1,0 +1,28 @@
+{
+  "name": "hindsight-memory",
+  "version": "0.2.0",
+  "description": "Hermes-style global memory for DeepSeek Harness backed by Hindsight: USER/MEMORY curated stores with char budgets, a frozen per-session snapshot, add/replace/remove/batch/list via the memory tool, semantic recall, nudge, and per-turn session retention.",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./lib/*.js": "./lib/*.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "RESEARCH.md",
+    "tests/*.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

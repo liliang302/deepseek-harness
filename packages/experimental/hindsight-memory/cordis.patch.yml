@@ -1,0 +1,32 @@
+# SDD Workbench… no: hindsight-memory bundle layer — inserts the Host plugin row.
+# Every config key is documented in README.md「Configuration」; schemastery validates them at load (fail loud).
+- insert:
+    - id: hindsight-memory
+      name: '@deepseek-ai/dsh-hindsight-memory'
+      config:
+        # Self-hosted Hindsight base URL (personal default; production deployments must set explicitly).
+        url: http://127.0.0.1:8888
+        # Memory bank id.
+        bank: hermes
+        # Hermes-aligned char budgets for the two curated stores.
+        userCharLimit: 1375
+        memoryCharLimit: 2200
+        # Frozen snapshot at the first step of each session.
+        snapshot: true
+        # Per-turn semantic recall after the first turn.
+        autoRecall: true
+        recallTokens: 800
+        # Retain each finished turn as a mem:session document.
+        autoRetain: true
+        retainMinChars: 120
+        maxRetainChars: 6000
+        # Nudge the model to review memory every N turns; 0 disables.
+        nudgeInterval: 10
+        tags:
+          - dsh
+        timeoutMs: 8000
+        retainTimeoutMs: 30000
+        maxEntryChars: 2200
+        maxInjectedChars: 6000
+        protectSecrets: true
+        maxEntries: 200

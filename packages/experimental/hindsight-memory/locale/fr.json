@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Mémoire Hindsight",
+    "description": "Mémoire à long terme globale sur un service Hindsight auto-hébergé : deux magasins curés (USER/MEMORY) de style Hermes avec budgets de caractères, instantané figé par session, rappel sémantique par tour, outil memory avec contrôle de sécurité et rétention automatique des tours. Accès réseau à l'URL Hindsight configurée requis.",
+    "detail": "docs/DETAIL.md"
+  }
+}

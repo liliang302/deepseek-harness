@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Hindsight-Speicher",
+    "description": "Globales Langzeitgedächtnis auf einem selbst gehosteten Hindsight-Dienst: zwei kuratierte Speicher (USER/MEMORY) im Hermes-Stil mit Zeichenbudgets, pro Sitzung eingefrorener Schnappschuss, semantischer Abruf pro Turn, memory-Werkzeug mit Sicherheitsprüfung und automatischer Turn-Ablage. Netzwerkzugriff auf die konfigurierte Hindsight-URL erforderlich.",
+    "detail": "docs/DETAIL.md"
+  }
+}

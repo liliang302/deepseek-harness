@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Hindsight 长期记忆",
+    "description": "以自托管 Hindsight 服务为存储的全局长期记忆：Hermes 风格的 USER/MEMORY 双库（含字符预算）、会话冻结快照、逐轮语义召回、带安全拦截的显式 memory 工具，以及每轮自动沉淀。需要访问所配置的 Hindsight 地址。",
+    "detail": "docs/DETAIL.md"
+  }
+}
