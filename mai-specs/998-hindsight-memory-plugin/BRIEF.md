@@ -2,7 +2,7 @@
 
 | 项 | 值 |
 |---|---|
-| Phase | draft |
+| Phase | done |
 | Profile | standard |
 | 优先级 | P1 |
 | 负责人 | liliang302 |
@@ -28,13 +28,13 @@
 
 | 阶段 | 选择 | 产物 | 结果 |
 |---|---|---|---|
-| PRD | 执行（standard） | [spec/PRD.md](spec/PRD.md) | 完成 |
-| 技术设计 | 执行 | design/TECH_DESIGN.md | 进行中 |
-| 方案评审 | 执行 | review/DESIGN_REVIEW.md | 待开始 |
-| 测试规划 | 执行 | test/TEST_PLAN.md | 待开始 |
-| 编码实现 | 执行 | packages/experimental/hindsight-memory/ | 待开始 |
-| 代码评审 | 执行 | review/CODE_REVIEW.md | 待开始 |
-| 验收 | 执行 | test/ACCEPTANCE.md | 待开始 |
+| PRD | 执行（standard） | [spec/PRD.md](spec/PRD.md) | 完成（评审通过） |
+| 技术设计 | 执行 | design/TECH_DESIGN.md | 完成（含 DESIGN_REVIEW 复评修订） |
+| 方案评审 | 执行 | review/DESIGN_REVIEW.md | 完成（P0-1+4×P1 修复采纳，复评通过） |
+| 测试规划 | 执行 | test/TEST_PLAN.md | 完成 |
+| 编码实现 | 执行 | packages/experimental/hindsight-memory/ | 完成（main @ f0a88096fb；vitest 159/159、src 覆盖率 100%、build:check/lint 绿） |
+| 代码评审 | 执行 | review/CODE_REVIEW.md | 完成（2026-11-20 真机同轮；无 P0，P1×4 门禁欠账 + P2×5 记录在案） |
+| 验收 | 执行 | test/ACCEPTANCE.md | 有条件通过（2026-11-20：AC-01..10 + IT-1 + E2E-12 全 PASS；AC-11 部分——doc-sync/config 目录 4 项红待修） |
 
 ## 上下文索引
 
