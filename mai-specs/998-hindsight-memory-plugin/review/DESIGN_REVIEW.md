@@ -1,6 +1,6 @@
 # 方案评审报告：Hindsight 全局记忆体插件移植
 
-> 评审人：design-review（my-review-design 独立评审）| 日期：2026-11-20 | 待评审文档：[design/TECH_DESIGN.md](../design/TECH_DESIGN.md)（基线 feat/hindsight-memory-plugin @ dsh-v0.2.2-rc.5，仓库 HEAD 9b1fd282f2）| 全程只读核对仓库真实代码
+> 评审人：design-review（my-review-design 独立评审）| 日期：2026-11-20 | 待评审文档：[design/TECH_DESIGN.md](../design/TECH_DESIGN.md)（基线 feat/hindsight-memory-plugin @ dsh-v0.2.2-rc.5，仓库 HEAD 见 git log）| 全程只读核对仓库真实代码
 
 ## 总体结论
 

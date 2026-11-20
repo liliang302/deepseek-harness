@@ -1,6 +1,6 @@
 # 验收报告：Hindsight 全局记忆体插件移植
 
-> Feature：998-hindsight-memory-plugin | 依据：[spec/PRD.md](../spec/PRD.md) AC-01..11、[test/TEST_PLAN.md](./TEST_PLAN.md) E2E-1..12 + IT-1 | 验收人：hs-acceptance（真机执行）| 日期：2026-11-20 | 被验对象：main @ f0a88096fb（交付提交 7e12e45acb），包版本 0.2.2-rc.5
+> Feature：998-hindsight-memory-plugin | 依据：[spec/PRD.md](../spec/PRD.md) AC-01..11、[test/TEST_PLAN.md](./TEST_PLAN.md) E2E-1..12 + IT-1 | 验收人：hs-acceptance（真机执行）| 日期：2026-11-20 | 被验对象：main（交付提交见 git log），包版本 0.2.2-rc.5
 
 ## 环境
 

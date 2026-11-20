@@ -6,17 +6,53 @@
   en: 7de09821c4abfb52
   zh: 3822d77cd9a36cfc
 /deepseek-ai-dsh-hindsight-memory:
-  en: 02d724146212883c
-  zh: 101812e9dd607ed4
-/deepseek-ai-dsh-hindsight-memory/assignment-entry-my-ai-infra-sdd-dsh:
-  en: 1afe7f7c6633bc71
-  zh: 259f0c851e063998
-/deepseek-ai-dsh-hindsight-memory/run-from-source:
-  en: e122ec28963bd340
-  zh: 8b6e958390459114
-/deepseek-ai-dsh-hindsight-memory/configuration-cordis-patch-yml-validated-at-load:
-  en: 6b634ae7aee5cbd7
-  zh: e93b1f8a9dbf5dab
+  en: 759256615b73390f
+  zh: a5e32a746fe4e48e
+/deepseek-ai-dsh-hindsight-memory/summary:
+  en: 2bef858e0fa30003
+  zh: 0d4f2c635418a245
+/deepseek-ai-dsh-hindsight-memory/table-of-contents:
+  en: 0396e759cf2ee45c
+  zh: 8d74539515bdf659
+/deepseek-ai-dsh-hindsight-memory/assignment-entry:
+  en: 63f764632e110d7d
+  zh: 5f28186c34d7755e
+/deepseek-ai-dsh-hindsight-memory/use-this-package:
+  en: 1d69e2469c460e7b
+  zh: 86580a7ebfe9aabc
+/deepseek-ai-dsh-hindsight-memory/configuration:
+  en: a7ebd236c1261ee8
+  zh: 0d99a8776e32f60c
+/deepseek-ai-dsh-hindsight-memory/understand-the-implementation:
+  en: 598ad601c256a636
+  zh: fe8bd507db2f4953
+/deepseek-ai-dsh-hindsight-memory/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context:
+  en: 493075354196c44e
+  zh: 65d6c7a8f1b79771
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context/what-the-model-sees:
+  en: 029591004e297491
+  zh: 41dbb327b7316a44
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context/what-the-model-sees/session-snapshot:
+  en: 4f54e27589cd293d
+  zh: 4f54e27589cd293d
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context/what-the-model-sees/per-turn-recall:
+  en: c1e5afe606454621
+  zh: c1e5afe606454621
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context/what-the-model-sees/review-nudge:
+  en: 2053aa451329a5c3
+  zh: 2053aa451329a5c3
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context/token-effect:
+  en: efbccdd77a9d8488
+  zh: 16dd3790428fdf5a
+/deepseek-ai-dsh-hindsight-memory/model-experience/injected-memory-context/kv-cache-effect:
+  en: bd400846bbe5d2fd
+  zh: e29a963d5dc55f49
 /deepseek-ai-dsh-hindsight-memory/known-limitations-and-deferred-work:
-  en: d7bdcbf65c96b8c5
-  zh: 188bfa58eeef5072
+  en: 12ff549a52d44d4a
+  zh: b41d9e843334f44e
+/deepseek-ai-dsh-hindsight-memory/known-limitations-and-deferred-work/dev-note:
+  en: 6e0f5f1b9f5a6537
+  zh: 5b32cb059f642e01

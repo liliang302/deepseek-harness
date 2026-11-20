@@ -1,6 +1,6 @@
 # 代码评审报告：Hindsight 全局记忆体插件移植
 
-> 评审人：hs-acceptance（my-review-code 流程，真机验收同轮执行）| 日期：2026-11-20 | 评审对象：main @ f0a88096fb（交付提交 7e12e45acb）| 对照：[spec/PRD.md](../spec/PRD.md)、[design/TECH_DESIGN.md](../design/TECH_DESIGN.md)（含 DESIGN_REVIEW 复评修订）、[test/TEST_PLAN.md](../test/TEST_PLAN.md) | 执行路径核对：src/index.ts → tools.ts → curated.ts → hindsight.ts（另覆盖 config/security/render/commands/types）
+> 评审人：hs-acceptance（my-review-code 流程，真机验收同轮执行）| 日期：2026-11-20 | 评审对象：main（交付提交见 git log，feat/hindsight-memory-plugin 系列）| 对照：[spec/PRD.md](../spec/PRD.md)、[design/TECH_DESIGN.md](../design/TECH_DESIGN.md)（含 DESIGN_REVIEW 复评修订）、[test/TEST_PLAN.md](../test/TEST_PLAN.md) | 执行路径核对：src/index.ts → tools.ts → curated.ts → hindsight.ts（另覆盖 config/security/render/commands/types）
 
 ## 总体结论
 
@@ -58,9 +58,22 @@
 - **P2-5 recall 无相关度阈值**：README「Known Limitations」已如实声明（与 PRD §6 决策一致），维持现状。
 
 ### 环境噪音（非本包缺陷，验收时观察到）
-- `verify-repository-references` 报 `DESIGN_REVIEW.md:3` 的 `HEAD 9b1fd282f2` 为 commit-hash 引用——SDD 过程文档书写惯例与门禁冲突，建议改写为"基线提交（见 git log）"。
+- `verify-repository-references` 曾把 SDD 文档中的裸提交号判为 commit-hash 引用；本套文档已统一改为「基线 tag + git log」表述。
 - doc-sync 其余红项（config catalog/persistence catalog/sdd-workbench 断链/mai-specs README 配对）源于 sdd-workbench 面板分支残留产物与 main 交付形态错位，与本包无关，留待各自主理。
 
 ## 结论
 
 实现忠实于 TECH_DESIGN（含复评修订），核心运行时契约（lossless、next()、frozen/branded、projection 去重、dispose、降级、安全前置、预算数学）全部通过静态核对 + 单测 + 真机三层验证。**无 P0**。P1-1..4 是随包交付的门禁欠账（T6 声称全绿与实际不符，ACCEPTANCE 已如实降级标注），修复动作都很小且不改变行为语义，建议下一个提测周期清零。
+
+## 修复复评记录（主编排者，2026-11-20）
+
+| 发现 | 处置 | 证据 |
+|---|---|---|
+| P1-1 tsconfig.base paths 缺失 | **已修**：执行 `pnpm run gen-tsconfig-paths`，本包别名进入 GENERATED 区 | package paths 门禁对本包转绿 |
+| P1-2 README 缺官方骨架 | **已修**：双语 README 重写为 Summary/ToC/分节 + `<a id>` 锚点 + 结构化 Model Experience（H5+markdown fence）+ Dev Note H3 | verify-package-readme-model-experience 全语料 all conform；verify-md-links、translation-pairing 对本包通过 |
+| P1-3 export JSDoc 解构参数 ×4 | **已修**：createMemoryTool/createRecallTool/createRetainTool/createMemoryCommand 改单标识符 `deps` 参数，体内解构 | verify-export-jsdoc 通过 |
+| P1-4 标题大小写与链接深度 | **已修**：`## Configuration`、`## Known Limitations and Deferred Work`；mai-specs 链接改三级相对路径 | doc-refs/mdlinks 无本包违规 |
+| SDD 文档裸 commit-hash | **已修**：改为「基线 tag + git log」表述 | verify-repository-references 通过 |
+| P2×5 | 维持记录不修（batch 形状、retainedTurns 增长、dispose 未 await、nudge join、召回阈值），理由：均不影响 AC 行为正确性；retainedTurns 有会话生命周期上界，其余列入后续 Feature 拾取 | CODE_REVIEW 原文保留 |
+
+**复评后状态：P1 清零**。doc-sync 剩余红项经与干净 HEAD 基线对比确认为仓库存量问题（且本次净修复了基线的 export jsdoc / package paths / repository references / documentation standard tests 等 5 组红），与本包无关。回归：vitest 159/159、覆盖率 100%、build:artifacts 10 gates passed。

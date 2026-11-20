@@ -34,7 +34,8 @@ export interface MemoryCommandDeps {
  * @param deps - store, client, and runtime configuration.
  * @returns a registrable command definition (name `memory`, no attachments).
  */
-export function createMemoryCommand({ store, client, config }: MemoryCommandDeps): CommandDefinition {
+export function createMemoryCommand(deps: MemoryCommandDeps): CommandDefinition {
+  const { store, client, config } = deps
   return {
     name: 'memory',
     description: '查看 / 检索 / 删除 Hindsight 长期记忆',

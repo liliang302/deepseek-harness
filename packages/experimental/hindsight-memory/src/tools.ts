@@ -144,7 +144,8 @@ export interface MemoryToolDeps {
  * @param deps - curated store and runtime configuration.
  * @returns a registrable tool definition with the cooperative timeout budget.
  */
-export function createMemoryTool({ store, config }: MemoryToolDeps): ToolDefinition {
+export function createMemoryTool(deps: MemoryToolDeps): ToolDefinition {
+  const { store, config } = deps
   return {
     name: 'memory',
     description: [
@@ -269,7 +270,8 @@ export interface ClientToolDeps {
  * @param deps - Hindsight client and runtime configuration.
  * @returns a registrable tool definition.
  */
-export function createRecallTool({ client, config }: ClientToolDeps): ToolDefinition {
+export function createRecallTool(deps: ClientToolDeps): ToolDefinition {
+  const { client, config } = deps
   return {
     name: 'memory_recall',
     description:
@@ -331,7 +333,8 @@ export function createRecallTool({ client, config }: ClientToolDeps): ToolDefini
  * @param deps - Hindsight client and runtime configuration.
  * @returns a registrable tool definition.
  */
-export function createRetainTool({ client, config }: ClientToolDeps): ToolDefinition {
+export function createRetainTool(deps: ClientToolDeps): ToolDefinition {
+  const { client, config } = deps
   return {
     name: 'memory_retain',
     description:

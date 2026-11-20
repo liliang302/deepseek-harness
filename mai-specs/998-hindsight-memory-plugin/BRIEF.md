@@ -32,10 +32,12 @@
 | 技术设计 | 执行 | design/TECH_DESIGN.md | 完成（含 DESIGN_REVIEW 复评修订） |
 | 方案评审 | 执行 | review/DESIGN_REVIEW.md | 完成（P0-1+4×P1 修复采纳，复评通过） |
 | 测试规划 | 执行 | test/TEST_PLAN.md | 完成 |
-| 编码实现 | 执行 | packages/experimental/hindsight-memory/ | 完成（main @ f0a88096fb；vitest 159/159、src 覆盖率 100%、build:check/lint 绿） |
+| 编码实现 | 执行 | packages/experimental/hindsight-memory/ | 完成（main，提交见 git log；vitest 159/159、src 覆盖率 100%、build:check/lint 绿） |
 | 代码评审 | 执行 | review/CODE_REVIEW.md | 完成（2026-11-20 真机同轮；无 P0，P1×4 门禁欠账 + P2×5 记录在案） |
 | 验收 | 执行 | test/ACCEPTANCE.md | 有条件通过（2026-11-20：AC-01..10 + IT-1 + E2E-12 全 PASS；AC-11 部分——doc-sync/config 目录 4 项红待修） |
 
 ## 上下文索引
 
 - [素材索引](context/_INDEX.md)
+
+> 评审后修复：P1×4 全部落地（paths 生成、README 骨架、JSDoc 签名、链接深度），见 CODE_REVIEW 复评记录。
