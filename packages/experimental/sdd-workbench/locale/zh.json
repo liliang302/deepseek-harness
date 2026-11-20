@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "SDD 工作台",
+    "description": "在侧边栏面板中浏览工作区的 mai-specs Feature，阅读简报、PRD、技术设计、评审记录与测试计划。",
+    "detail": "docs/DETAIL.md"
+  }
+}

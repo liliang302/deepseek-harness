@@ -1,0 +1,5 @@
+- insert:
+    - id: api-sdd-workbench
+      name: '@deepseek-ai/dsh-sdd-workbench'
+    - id: ui-sdd-workbench
+      name: '@deepseek-ai/dsh-client-ui-sdd-workbench'

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "SDD Workbench",
+    "description": "Browse the workspace's mai-specs features and read their briefs, PRDs, designs, reviews, and test plans in a sidebar panel.",
+    "detail": "docs/DETAIL.md"
+  }
+}
