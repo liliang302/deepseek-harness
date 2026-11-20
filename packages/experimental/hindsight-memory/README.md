@@ -17,7 +17,7 @@ One memory = one Hindsight document (exact original text, stable id, tags), orga
 
 - **Plugin purpose**: the assignment deliverable — a DSH plugin developed through the my-ai-infra SDD workflow; this package is the ported hindsight-memory plugin (TS, repository conventions, optional bundle registration).
 - **SDD process artifacts**: [`mai-specs/998-hindsight-memory-plugin/`](../../mai-specs/998-hindsight-memory-plugin/) — BRIEF, PRD, TECH_DESIGN, DESIGN_REVIEW (+复评), CODE_REVIEW, TEST_PLAN, ACCEPTANCE; index at [`mai-specs/ROADMAP.md`](../../mai-specs/ROADMAP.md). Baseline JS sources are archived under the Feature's `context/baseline/`.
-- **Branch**: `feat/hindsight-memory-plugin` (based on tag `dsh-v0.2.2-rc.5`). The earlier SDD-workbench panel attempt remains available on branch `feat/sdd-workbench-plugin`.
+- **Main branch**: `main` carries the assignment entry and the full deliverable — this plugin, its SDD artifacts, and the archived baseline sources (plus the earlier SDD-workbench panel as an extra attempt). Feature branches: `feat/hindsight-memory-plugin` (this work), `feat/sdd-workbench-plugin` (the panel attempt).
 
 ## Run from source
 

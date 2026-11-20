@@ -17,7 +17,7 @@ DeepSeek Harness 的全局长期记忆插件，存储后端为自托管的 [Hind
 
 - **插件用途**：本包即作业交付物——按 my-ai-infra SDD 流程移植进仓库的 hindsight-memory 记忆体插件（TS 化、符合仓库规范、optional bundle 注册）。
 - **SDD 过程产物**：[`mai-specs/998-hindsight-memory-plugin/`](../../mai-specs/998-hindsight-memory-plugin/)——BRIEF、PRD、TECH_DESIGN、DESIGN_REVIEW(+复评)、CODE_REVIEW、TEST_PLAN、ACCEPTANCE；索引见 [`mai-specs/ROADMAP.md`](../../mai-specs/ROADMAP.md)。旧 JS 基线源码归档于该 Feature 的 `context/baseline/`。
-- **分支**：`feat/hindsight-memory-plugin`（基于 tag `dsh-v0.2.2-rc.5`）。更早的 SDD 工作台面板尝试保留在 `feat/sdd-workbench-plugin` 分支。
+- **主分支**：`main` 承载作业入口与完整交付物——本插件、SDD 过程产物与归档基线源码（另含更早的 SDD 工作台面板附加尝试）。特性分支：`feat/hindsight-memory-plugin`（本次工作）、`feat/sdd-workbench-plugin`（面板尝试）。
 
 ## 从源码运行
 
